@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="contact-form-task-and-map">
+    <div class="contact-form-task-and-map-grid">
         <div class="contact-us-full-form">
             <div class="contact-us-voodoo">
                 <h1>Contact Us</h1>
@@ -16,35 +16,50 @@
             </div>
             <div class="contact-us-form-grid">
                <form>
-                <div>
+                <div class="input-form-grid">
                     <input placeholder="Full Name*" type="text" name="name" autocomplete="on">
                     <input placeholder="Title/Position*" type="text" name="title-position" autocomplete="on">
-                    <select required size="3" aria-placeholder="Practice / Institution*">
+
+
+                    <input placeholder="Title/Position*" type="text" name="title-position" autocomplete="on">
+                    <!-- <select required size="3" aria-placeholder="Practice / Institution*">
                         <option value="value1">Option 1</option>
                         <option value="value2">Option 2</option>
                         <option value="value3">Option 3</option>
-                    </select>
-                    <input placeholder="Email Address*" type="email" id="email" name="email" autocomplete="on"><!--clear id's-->
-                    <input placeholder="Phone Number*" type="number" id="number" name="number" autocomplete="on">
-                    <select required size="5" aria-placeholder="Medical Profession*">
+                    </select> -->
+                    <input placeholder="Email Address*" type="email" name="email" autocomplete="on">
+                    <input placeholder="Phone Number*" type="number" name="number" autocomplete="on">
+
+
+
+                    <input placeholder="Title/Position*" type="text" name="title-position" autocomplete="on">
+                    <!-- <select required size="5" aria-placeholder="Medical Profession*">
                         <option value="value1">Option 1</option>
                         <option value="value2">Option 2</option>
                         <option value="value3">Option 3</option>
                         <option value="value4">Option 4</option>
                         <option value="value5">Option 5</option>
-                    </select>
-                    <select required size="3" aria-placeholder="Type of Inquiry*">
+                    </select> -->
+
+
+
+
+                    <input placeholder="Title/Position*" type="text" name="title-position" autocomplete="on">
+                    <!-- <select required size="3" aria-placeholder="Type of Inquiry*">
                         <option value="value1">Option 1</option>
                         <option value="value2">Option 2</option>
                         <option value="value3">Option 3</option>
                     </select>
-                    <input placeholder="Enter Message*" type="text" id="text" name="text" autocomplete="on">
+                    <input placeholder="Enter Message*" type="text" name="text" autocomplete="on"> -->
                 </div>
-                <button type="submit">Send Message</button>
+                <div class="send-message">
+                    <input type="submit" id="button" style="display: none;">
+                    <label  class="style-for-button" for="button">Send Message</label>
+                </div>
                </form>
             </div>
         </div>
-            <div class="map"></div>
+            <div class="map" style="background-color: red;"></div>
         </div>
     </div>
 </body>
