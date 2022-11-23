@@ -7,10 +7,10 @@
     src:url(src/Inter-Regular.ttf)
 }
 
-body {
+/* body {
     background: rgb(236,236,240);
     background: linear-gradient(143deg, rgba(236,236,240,1) 0%, rgba(255,255,255,1) 100%);
-}
+} */
 
 .contact-form-task-and-map-grid {
     margin: auto;
@@ -42,7 +42,7 @@ body {
 }
 form{
     display: grid;
-    gap: 15px;
+    gap: 30px;
 }
 input, textarea, .select::placeholder {
     font-family: "Inter-Regular";
@@ -57,7 +57,7 @@ input, textarea, .select::placeholder {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 30px;
     width: 100%;
 }
 input, textarea, .select {
@@ -68,6 +68,22 @@ input, textarea, .select {
     border-radius: 8px;
     padding: 20px;
     box-sizing: border-box;
+    color:#c4c4c4;
+}
+.expanded{
+    position: absolute;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+    border-radius: 8px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+.expanded div {
+    padding: 20px;
+}
+.expanded div:hover {
+    background-color: #cecdcf;
 }
 .style-for-button{
     display: block;
@@ -87,6 +103,10 @@ input, textarea, .select {
     color: #FFFFFF;
 }
 
+.style-input{
+    background-color: #FFFFFF;
+}
+
 #textarea-style{
     outline: none;
     overflow: auto;
@@ -102,7 +122,7 @@ textarea::placeholder{
     opacity: 0.5;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
     .contact-form-task-and-map-grid{
         max-width: 85%;
         margin: auto;
@@ -127,4 +147,28 @@ textarea::placeholder{
     .style-for-button {
         display: block;
     }
+    #map{
+        margin-top: 80px;
+        margin-bottom: 80px;
+        height: 100vh;
+    }
+}
+.gm-style-cc, a, .gm-fullscreen-control, .gmnoprint {
+    display: none !important;
+  }
+.bilding-adress p{
+    font-family: "Inter-Regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #1A1A1A;
+}
+.phone-and-mail{
+    font-family: "Inter-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #858585;
 }
